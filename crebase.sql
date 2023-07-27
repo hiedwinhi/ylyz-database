@@ -1,6 +1,6 @@
 /*==============================================================*/
 /* DBMS name:      MySQL 5.0                                    */
-/* Created on:     2023/6/21 12:16:39                           */
+/* Created on:     2023/7/27 12:46:39                           */
 /*==============================================================*/
 
 
@@ -242,7 +242,7 @@ create table Members
    member_residence_province varchar(20)  comment '居住省份，数据字典',
    member_address       varchar(200)  comment '',
    member_telephone     varchar(20)  comment '',
-   member_wxID          varchar(50)  comment '',
+   member_wxID          varchar(50)  comment '微信号',
    member_health_status text  comment '文字描述',
    member_health_report varchar(200)  comment '体检报告存储目录及名称',
    member_selfcare_ablility varchar(20)  comment '自理能力，数据字典',
@@ -259,6 +259,7 @@ create table Members
    member_disability_type varchar(20)  comment '残疾类型，来源数据字典',
    member_status        smallint  comment '0-注销 1-正常',
    memeber_create_time  datetime  comment '',
+   member_passwd        varchar(50)  comment '密码，密码在小程序设置',
    member_last_modified_time datetime  comment '',
    primary key (member_id)
 );
